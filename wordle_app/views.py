@@ -91,7 +91,7 @@ def index(request):
             request.session['SECRET_WORD'] = get_random_word(current_wordlist)
         # 입력 단어가 오답인 경우
         else:
-            response_text = '오답이에요. <br>'
+            response_text = '다시 도전해보세요 ! <br>'
             response_text += f'현재 {attempts}번째 기회를 사용했어요. <br>남은 기회는 {10 - attempts}번 입니다.<br>'
             matched = []
             for i in range(5):
