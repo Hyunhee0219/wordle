@@ -374,6 +374,164 @@
         .modal-content p {
             font-size: 15px;
         }
+
+        @media screen and (max-width: 768px) {
+            body {
+                padding-top: 20px;
+            }
+
+            .main-container {
+                margin-top: 0;
+                padding-top: 20px;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            input[type="text"] {
+                font-size: 16px;
+                width: 100px;
+            }
+
+            button[type="submit"],
+            button[type="start"],
+            button[type="run"],
+            button[type="fly"],
+            button[type="walk"],
+            button[type="jump"],
+            button[type="master"] {
+                padding: 5px 10px;
+                font-size: 12px;
+                width: auto;
+                margin: 3px;
+            }
+
+            .new-container {
+                top: 0;
+                right: 0;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .level-container {
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 10px;
+                order: 1; /* 맨 아래로 배치 */
+            }
+
+            .content-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .character-container {
+                order: 1; /* 캐릭터 컨테이너의 순서 */
+                position: relative; /* relative로 변경 */
+            }
+
+            .history {
+                order: 2; /* 히스토리 컨테이너의 순서 */
+                margin-top: 40px;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .list-container {
+                order: 3; /* 리스트 컨테이너의 순서 */
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                margin-top: 10px;
+                flex-wrap: wrap;
+            }
+
+            .list-container button {
+                flex: 1 1 30%; /* 버튼 크기 조정 */
+                margin: 5px; /* 버튼 간격 조정 */
+                max-width: 30%; /* 최대 너비 설정 */
+            }
+
+            .new-container {
+                order: 4; /* 새 게임 컨테이너의 순서 */
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .speech-bubble {
+                position: relative; /* relative로 변경 */
+                top: -20px; /* 캐릭터 이미지 아래로 이동, 필요에 따라 조정 */
+                left: 50%;
+                transform: translateX(-50%);
+                width: 240px;
+                padding: 10px;
+                background: #fff;
+                border: 2px solid #000;
+                border-radius: 5px;
+                font-size: 16px;
+                text-align: center;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .speech-bubble::after {
+                content: '';
+                position: absolute;
+                top: -10px; /* 화살표의 위치를 아래로 조정 */
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 0;
+                border: 10px solid transparent;
+                border-top-color: #fff; /* 화살표를 아래로 향하게 */
+                border-bottom: 0;
+                border-right: 0;
+                margin-left: -10px;
+            }
+
+            .keypad {
+                display: none; /* 모바일에서는 키패드를 숨깁니다 */
+            }
+
+            .keypad-row button {
+                padding: 6px 8px;
+                font-size: 12px;
+                margin: 2px;
+            }
+
+            .letter-box {
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                font-size: 16px;
+            }
+
+            .banner-container img {
+                width: 120px;
+            }
+
+            .modal-content {
+                width: 90%;
+            }
+        }
+
+
+
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400&display=swap" rel="stylesheet">
 
