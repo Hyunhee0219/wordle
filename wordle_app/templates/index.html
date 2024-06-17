@@ -124,7 +124,7 @@
             position: relative;
             top: 320px;
             /* 줄인 값 */
-            left: 550px;
+            left: 585px;
             display: inline-block;
             margin-top: 30px;
             flex-direction: column;
@@ -382,12 +382,12 @@
     {% load static %}
     <div class="list-container">
         <!-- 단어 목록을 바꿀 수 있는 버튼 -->
-        <button id="btn-start" type="start" onclick="changeWordlist('Start')">Start</button>
-        <button id="btn-walk" type="walk" onclick="changeWordlist('Walk')">Walk</button>
-        <button id="btn-run" type="run" onclick="changeWordlist('Run')">Run</button>
-        <button id="btn-jump" type="jump" onclick="changeWordlist('Jump')">Jump</button>
-        <button id="btn-fly" type="fly" onclick="changeWordlist('Fly')">Fly</button>
-        <button id="btn-master" type="master" onclick="changeWordlist('Master')">Master</button>
+        <button id="btn-start" type="start" onclick="changeWordlist('Start')">1단계 Start</button>
+        <button id="btn-walk" type="walk" onclick="changeWordlist('Walk')">2단계 Walk</button>
+        <button id="btn-run" type="run" onclick="changeWordlist('Run')">3단계 Run</button>
+        <button id="btn-jump" type="jump" onclick="changeWordlist('Jump')">4단계 Jump</button>
+        <button id="btn-fly" type="fly" onclick="changeWordlist('Fly')">5단계 Fly</button>
+        <button id="btn-master" type="master" onclick="changeWordlist('Master')">6단계 Master</button>
     </div>
     <div class="new-container">
     <!-- 새 게임 시작 버튼 -->
@@ -493,6 +493,7 @@
             <button data-letter="j">J</button>
             <button data-letter="k">K</button>
             <button data-letter="l">L</button>
+            <button data-letter="enter">Enter</button>
         </div>
         <div class="keypad-row">
             <button data-letter="z">Z</button>
@@ -578,7 +579,7 @@
         }
         document.addEventListener("DOMContentLoaded", function () {
             const inputField = document.getElementsByName("input_text")[0];
-
+        
             // 키패드 상태 초기화
             const keypadStates = JSON.parse('{{ keypad_states|escapejs }}');
             // 각 버튼에 초기 상태 적용
@@ -594,22 +595,26 @@
                     const letter = button.getAttribute('data-letter');
                     if (letter === "backspace") {
                         backspace();      // 백스페이스 클릭 시 처리
+                    } else if (letter === "enter") {
+                        if (inputField.value.length > 0) { // 입력 필드가 비어 있지 않은 경우에만 제출
+                            document.forms[1].submit();
+                        }
                     } else if (inputField.value.length < 5) {
                         inputField.value += letter;      // 글자 추가
                     }
                 });
             });
-
+        
             // 백스페이스 버튼 클릭 시 처리
-            document.getElementById("backspace").addEventListener("click", () => {
+            document.querySelector('button[data-letter="backspace"]').addEventListener("click", () => {
                 inputField.value = inputField.value.slice(0, -1);
-                resetKeypadButtonStyle();
             });
             // 제출 버튼 클릭 시 폼 제출
             document.getElementById("submit").addEventListener("click", () => {
                 document.forms[1].submit();
             });
         });
+        
         // 키패드 버튼 스타일 업데이트
         function updateKeypadButtonStyle(letter) {
             const keypadButton = document.getElementById(letter.toLowerCase());
