@@ -22,7 +22,7 @@ match
 throw
 tower
 nurse
-teacj
+teach
 pilot
 bench
 grass
