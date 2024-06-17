@@ -424,6 +424,24 @@
         <!-- 단어를 입력하고 제출하는 버튼 -->
         <button type="submit">Submit</button>
     </form>
+    <p id="warning-message" style="color: red; display: none;">영어 단어를 입력하세요.</p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const inputField = document.getElementsByName("input_text")[0];
+            const warningMessage = document.getElementById("warning-message");
+
+            inputField.addEventListener("input", function () {
+                if (/[\u3131-\u3163\uac00-\ud7a3]+/.test(inputField.value)) {
+                    inputField.value = inputField.value.replace(/[\u3131-\u3163\uac00-\ud7a3]+/g, '');
+                    warningMessage.style.display = 'block';
+                } else {
+                    warningMessage.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
     <!-- 캐릭터와 추측 단어 기록을 포함하는 컨테이너 -->
     <div class="content-container">
         <div class="character-container">
