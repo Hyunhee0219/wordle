@@ -9,21 +9,18 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/your_stylesheet.css' %}">
     
     <style>
-        /* 메인 컨테이너의 스타일 */
         .main-container {
-            margin-top: -200px; /* 필요한 경우 값 조정 */
-            padding-top: 0; /* 위쪽 패딩 없애기 */
-        }
-        
-        /* 바디 스타일 */
+        margin-top: -200px; /* Adjust the value as needed */
+        padding-top: 0; /* Ensure there is no padding at the top */
+    }
         body {
             font-family: 'Changa', sans-serif;
             text-align: center;
             background-color: #F0F0F0;
-            padding-top: 0px; /* 조정된 값 */
+            padding-top: 0px;
+            /* 줄인 값 */
         }
 
-        /* 제목 스타일 */
         h1 {
             font-size: 50px;
             color: #111;
@@ -31,12 +28,10 @@
             font-weight: 500;
         }
 
-        /* 폼 스타일 */
         form {
             margin-top: 20px;
         }
 
-        /* 텍스트 입력 필드 스타일 */
         input[type="text"] {
             padding: 10px;
             font-size: 20px;
@@ -47,7 +42,6 @@
             outline: none;
         }
 
-        /* 제출 버튼 스타일 */
         button[type="submit"] {
             padding: 10px 20px;
             font-size: 16px;
@@ -59,12 +53,10 @@
             transition: background-color 0.3s ease;
         }
 
-        /* 제출 버튼 호버 스타일 */
         button[type="submit"]:hover {
             background-color: #45A049;
         }
 
-        /* 시작 버튼 스타일 */
         button[type="start"] {
             padding: 7px 14px;
             font-size: 16px;
@@ -76,7 +68,6 @@
             transition: background-color 0.3s ease;
         }
 
-        /* 달리기 버튼 스타일 */
         button[type="run"] {
             padding: 7px 14px;
             font-size: 16px;
@@ -88,7 +79,6 @@
             transition: background-color 0.3s ease;
         }
 
-        /* 날기 버튼 스타일 */
         button[type="fly"] {
             padding: 7px 14px;
             font-size: 16px;
@@ -99,8 +89,6 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
-        /* 걷기 버튼 스타일 */
         button[type="walk"] {
             padding: 7px 14px;
             font-size: 16px;
@@ -111,8 +99,6 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
-        /* 점프 버튼 스타일 */
         button[type="jump"] {
             padding: 7px 14px;
             font-size: 16px;
@@ -123,8 +109,6 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
-        /* 마스터 버튼 스타일 */
         button[type="master"] {
             padding: 7px 14px;
             font-size: 16px;
@@ -136,10 +120,10 @@
             transition: background-color 0.3s ease;
         }
 
-        /* 단어 목록 버튼들을 포함하는 컨테이너 스타일 */
         .list-container {
             position: relative;
-            top: 320px; /* 조정된 값 */
+            top: 320px;
+            /* 줄인 값 */
             left: 550px;
             display: inline-block;
             margin-top: 30px;
@@ -147,29 +131,30 @@
             align-items: flex-start;
         }
 
-        /* 리스트 컨테이너 내부 버튼 및 폼 스타일 */
         .list-container button,
         .list-container form {
-            margin-bottom: 10px; /* 버튼 간의 간격 */
+            margin-bottom: 10px;
+            /* 버튼 간의 간격 */
             width: 120%;
             display: block;
+            /* 버튼을 부모 요소의 너비로 설정 (선택 사항) */
         }
 
-        /* 리스트 컨테이너 폼 버튼 스타일 */
         .list-container form button {
             width: 100%;
+            /* 폼 버튼의 너비도 동일하게 설정 */
         }
 
-        /* 새로운 게임 컨테이너 스타일 */
         .new-container {
             position: relative;
-            top: 20px; /* 조정된 값 */
+            top: 20px;
+            /* 줄인 값 */
             right: 300px;
             display: inline-block;
-            margin-top: 30px; /* 조정된 값 */
+            margin-top: 30px;
+            /* 줄인 값 */
         }
 
-        /* 레벨 컨테이너의 텍스트 스타일 */
         .level-container p {
             font-size: 16px;
             border: 2px solid black;
@@ -181,51 +166,45 @@
             text-align: center;
         }
 
-        /* 레벨 컨테이너 스타일 */
         .level-container {
             position: relative;
-            top: 20px; /* 조정된 값 */
+            top: 20px;
+            /* 줄인 값 */
             left: 330px;
             display: inline-block;
-            margin-top: 30px; /* 조정된 값 */
+            margin-top: 30px;
+            /* 줄인 값 */
         }
 
-        /* 목록 스타일 */
         ul {
             list-style-type: none;
             padding: 0;
         }
 
-        /* 리스트 아이템 스타일 */
         li {
             display: block;
             margin: 5px;
             font-size: 20px;
         }
 
-        /* 응답 텍스트 스타일 */
         .response {
             margin-top: 20px;
             font-size: 18px;
         }
 
-        /* 히스토리 스타일 */
         .history {
             margin-top: 20px;
             margin-bottom: 20px;
         }
 
-        /* 키패드 스타일 */
         .keypad {
             margin-top: 20px;
         }
 
-        /* 키패드 행 스타일 */
         .keypad-row {
             margin-bottom: 10px;
         }
 
-        /* 키패드 버튼 스타일 */
         .keypad-row button {
             padding: 10px 15px;
             font-size: 18px;
@@ -236,12 +215,10 @@
             transition: background-color 0.3s ease;
         }
 
-        /* 키패드 버튼 호버 스타일 */
         .keypad-row button:hover {
             background-color: #45A049;
         }
 
-        /* 단어 박스 스타일 */
         .letter-box {
             display: inline-block;
             width: 40px;
@@ -254,7 +231,6 @@
             border-radius: 5px;
         }
 
-        /* 색상 스타일 */
         .green {
             background-color: #4CAF50;
         }
@@ -282,7 +258,6 @@
             color: white;
         }
 
-        /* 모달 스타일 */
         .modal {
             display: none;
             position: fixed;
@@ -295,7 +270,6 @@
             overflow: auto;
         }
 
-        /* 모달 내용 스타일 */
         .modal-content {
             background-color: #FEFEFE;
             margin: 10% auto;
@@ -308,12 +282,10 @@
             font-family: 'Gill Sans';
         }
 
-        /* 규칙 버튼 스타일 */
         #rule-button {
             margin-top: 10px;
         }
 
-        /* 닫기 버튼 스타일 */
         .close {
             color: #aaa;
             float: right;
@@ -321,144 +293,344 @@
             font-weight: bold;
         }
 
-        /* 닫기 버튼 호버 및 포커스 스타일 */
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer
-        }
-
-        /* 닫기 버튼 호버 및 포커스 스타일 */
         .close:hover,
         .close:focus {
             color: black;
             text-decoration: none;
             cursor: pointer;
         }
-        </style>
-        </head>
 
-        <body>
-        <div class="main-container">
-        <!-- 제목 섹션 -->
-        <h1>Wordle Game</h1>
-
-        <!-- 단어 입력 폼 -->
-        <form id="word-form">
-            <input type="text" id="word-input" maxlength="5" required>
-            <button type="submit">Submit</button>
-        </form>
-
-        <!-- 응답 메시지 표시 -->
-        <div class="response" id="response"></div>
-
-        <!-- 히스토리 섹션 -->
-        <div class="history" id="history"></div>
-
-        <!-- 키패드 섹션 -->
-        <div class="keypad">
-            <div class="keypad-row">
-                <!-- 키패드의 첫 번째 행 버튼들 -->
-                <button>A</button>
-                <button>B</button>
-                <button>C</button>
-                <button>D</button>
-                <button>E</button>
-                <button>F</button>
-                <button>G</button>
-                <button>H</button>
-                <button>I</button>
-                <button>J</button>
-            </div>
-            <div class="keypad-row">
-                <!-- 키패드의 두 번째 행 버튼들 -->
-                <button>K</button>
-                <button>L</button>
-                <button>M</button>
-                <button>N</button>
-                <button>O</button>
-                <button>P</button>
-                <button>Q</button>
-                <button>R</button>
-                <button>S</button>
-                <button>T</button>
-            </div>
-            <div class="keypad-row">
-                <!-- 키패드의 세 번째 행 버튼들 -->
-                <button>U</button>
-                <button>V</button>
-                <button>W</button>
-                <button>X</button>
-                <button>Y</button>
-                <button>Z</button>
-            </div>
-        </div>
-        </div>
-
-        <!-- 모달 섹션 -->
-        <div id="rules-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>게임 규칙</h2>
-            <p>게임 규칙을 여기 적습니다...</p>
-        </div>
-        </div>
-
-        <!-- 규칙 버튼 -->
-        <button id="rule-button">게임 규칙 보기</button>
-
-        <!-- 리스트 컨테이너 -->
-        <div class="list-container">
-        <!-- 새로운 게임 버튼 -->
-        <button type="start">새로운 게임</button>
-        <!-- 기타 단어 리스트와 관련된 버튼들 -->
-        <button type="run">달리기</button>
-        <button type="fly">날기</button>
-        <button type="walk">걷기</button>
-        <button type="jump">점프</button>
-        <button type="master">마스터</button>
-        </div>
-
-        <!-- 레벨 컨테이너 -->
-        <div class="level-container">
-        <p>레벨: <span id="level">1</span></p>
-        </div>
-
-        <script>
-        // 자바스크립트로 모달 기능 구현
-
-        // 규칙 버튼과 모달 엘리먼트 가져오기
-        var modal = document.getElementById("rules-modal");
-        var btn = document.getElementById("rule-button");
-        var span = document.getElementsByClassName("close")[0];
-
-        // 규칙 버튼 클릭 시 모달 열기
-        btn.onclick = function() {
-            modal.style.display = "block";
+        .content-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        // 닫기 버튼 클릭 시 모달 닫기
-        span.onclick = function() {
-            modal.style.display = "none";
+        .history {
+            margin-left: 20px;
         }
 
-        // 모달 외부 클릭 시 모달 닫기
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+        .character-container {
+            position: relative;
+            display: inline-block;
+            top: 30px;
+        }
+
+        .character {
+            width: auto;
+            height: 200px;
+        }
+
+        .speech-bubble {
+            position: absolute;
+            top: 60px;
+            left: -200px;
+            width: 240px;
+            padding: 10px;
+            background: #fff;
+            border: 2px solid #000;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .speech-bubble::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-left-color: #fff;
+            border-right: 0;
+            border-top: 0;
+            margin-top: -10px;
+        }
+
+        .banner-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .banner-container a {
+            margin: 0 10px;
+        }
+
+        .banner-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .banner-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .modal-content p {
+            font-size: 15px;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400&display=swap" rel="stylesheet">
+
+<body>
+    <div class="main-container">
+    {% load static %}
+    <div class="list-container">
+        <!-- 단어 목록을 바꿀 수 있는 버튼 -->
+        <button id="btn-start" type="start" onclick="changeWordlist('Start')">Start</button>
+        <button id="btn-walk" type="walk" onclick="changeWordlist('Walk')">Walk</button>
+        <button id="btn-run" type="run" onclick="changeWordlist('Run')">Run</button>
+        <button id="btn-jump" type="jump" onclick="changeWordlist('Jump')">Jump</button>
+        <button id="btn-fly" type="fly" onclick="changeWordlist('Fly')">Fly</button>
+        <button id="btn-master" type="master" onclick="changeWordlist('Master')">Master</button>
+    </div>
+    <div class="new-container">
+    <!-- 새 게임 시작 버튼 -->
+    <form method="get" action="">
+        <button class="new-game-btn" type="submit" name="new_game" value="1">New Game</button>
+    </form>
+    </div>
+    <div class="level-container">
+        <!-- 현재 학습하고 있는 단어 목록 단계 보여주기 -->
+        <p>{{current_wordlist}} 단계 학습 중</p>
+    </div>
+    <!-- 메인 제목 & 규칙을 설명해주는 팝업 -->
+    <h1>🎮Wordle Game🎮<button id="rule-button" onclick="toggleModal()">Rule</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="toggleModal()">&times;</span>
+                <p>
+                    10번의 시도 안에 오늘의 워들을 알아내세요.<br>
+                    각각의 시도는 5글자의 영어 단어로 이루어 집니다.<br>
+                    추측이 맞는지 확인하려면 Submit 버튼을 누르세요.<br>
+                    추측한 단어가 얼마나 답에 근접했는지는 이후 각 타일의 색으로 표시됩니다.<br><br>
+                    🟩 : 위치와 알파벳 모두 맞음<br>
+                    🟨 : 알파벳 맞음<br>
+                    ⬛ : 위치와 알파벳 모두 틀림
+                </p>
+            </div>
+        </div>
+    </h1>
+    <form method="post" action="">
+        {% csrf_token %}
+        <input type="hidden" name="current_wordlist" value="{{ current_wordlist }}">
+        <!-- 단어 입력 받는 곳 -->
+        <input type="text" name="input_text" maxlength="5" placeholder="Enter your guess" required>
+        <!-- 단어를 입력하고 제출하는 버튼 -->
+        <button type="submit">Submit</button>
+    </form>
+    <p id="warning-message" style="color: red; display: none;">영어 단어를 입력하세요.</p>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const inputField = document.getElementsByName("input_text")[0];
+            const warningMessage = document.getElementById("warning-message");
+
+            inputField.addEventListener("input", function () {
+                if (/[\u3131-\u3163\uac00-\ud7a3]+/.test(inputField.value)) {
+                    inputField.value = inputField.value.replace(/[\u3131-\u3163\uac00-\ud7a3]+/g, '');
+                    warningMessage.style.display = 'block';
+                } else {
+                    warningMessage.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+    <!-- 캐릭터와 추측 단어 기록을 포함하는 컨테이너 -->
+    <div class="content-container">
+        <div class="character-container">
+            <!-- 캐릭터 이미지 -->
+            <img src="{% static 'my_app/images/character.png' %}" alt="Character" class="character">
+            <!-- 응답 텍스트가 있는 경우 표시 -->
+            {% if response_text %}
+            <div class="speech-bubble">{{ response_text|safe }}</div>
+            {% endif %}
+        </div>
+        <!-- 추측 단어 기록 -->
+        {% if history %}
+        <div class="history">
+            <h3>Guess History</h3>
+            <ul>
+                {% for entry in history %}
+                <li>
+                    <!-- 각 글자와 상태 표시 -->
+                    {% for status, letter in entry.matched %}
+                    <span class="letter-box {{ status }}">{{ letter }}</span>
+                    {% endfor %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+    <!-- 글자 입력을 위한 키패드 버튼 -->
+    <div class="keypad">
+        <div class="keypad-row">
+            <button data-letter="q">Q</button>
+            <button data-letter="w">W</button>
+            <button data-letter="e">E</button>
+            <button data-letter="r">R</button>
+            <button data-letter="t">T</button>
+            <button data-letter="y">Y</button>
+            <button data-letter="u">U</button>
+            <button data-letter="i">I</button>
+            <button data-letter="o">O</button>
+            <button data-letter="p">P</button>
+        </div>
+        <div class="keypad-row">
+            <button data-letter="a">A</button>
+            <button data-letter="s">S</button>
+            <button data-letter="d">D</button>
+            <button data-letter="f">F</button>
+            <button data-letter="g">G</button>
+            <button data-letter="h">H</button>
+            <button data-letter="j">J</button>
+            <button data-letter="k">K</button>
+            <button data-letter="l">L</button>
+        </div>
+        <div class="keypad-row">
+            <button data-letter="z">Z</button>
+            <button data-letter="x">X</button>
+            <button data-letter="c">C</button>
+            <button data-letter="v">V</button>
+            <button data-letter="b">B</button>
+            <button data-letter="n">N</button>
+            <button data-letter="m">M</button>
+            <button data-letter="backspace">⌫</button>
+        </div>
+    </div>
+    </form>
+    <!-- 외부 링크를 포함하는 배너 컨테이너 -->
+    <div class="banner-container">
+        <a href="https://en.dict.naver.com" target="_blank">
+            <img src="/static/images/naver_banner.jpg" alt="Naver Dictionary">
+        </a>
+        <a href="https://www.milkt.co.kr" target="_blank">
+            <img src="/static/images/milkt_banner.jpg" alt="Milkt">
+        </a>
+    </div>
+    <script>
+        // 글자 추가 함수
+        function addLetter(letter) {
+            var input = document.getElementsByName("input_text")[0];
+            if (input.value.length < 5) {
+                input.value += letter;
+            }
+        }
+        // 백스페이스 기능 함수
+        function backspace() {
+            var input = document.getElementsByName("input_text")[0];
+            input.value = input.value.slice(0, -1);
+        }
+        // 모달 창 열고 닫는 함수
+        function toggleModal() {
+            var modal = document.getElementById("myModal");
+            if (modal.style.display === "none" || modal.style.display === "") {
+                modal.style.display = "block"; // 모달 열기
+            } else {
+                modal.style.display = "none"; // 모달 닫기
             }
         }
 
-        // 단어 제출 폼 처리
-        document.getElementById("word-form").addEventListener("submit", function(event) {
-            event.preventDefault();
-            // 입력된 단어 가져오기
-            var word = document.getElementById("word-input").value;
-            // 단어 처리 로직 추가 필요
-            document.getElementById("response").innerText = "제출된 단어: " + word;
-        });
-        </script>
-        </body>
+        var currentWordlist = ''; // 현재 선택된 단어 목록을 추적하는 변수
 
-        </html>
+        // 단어 목록 변경 함수
+        function changeWordlist(wordlist) {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/change-wordlist', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    alert('단어 목록이 변경되었습니다.');
+                    // 게임 시작하기 위해 현재 단어 목록 업데이트
+                    currentWordlist = wordlist;
+                    startNewGame();
+                } else {
+                    alert('서버 오류가 발생했습니다.');
+                }
+            };
+            xhr.send(JSON.stringify({ wordlist: wordlist }));
+        }
+
+        var newGameButton = document.querySelector('.new-game-btn');
+
+        // 새 게임 시작 함수
+        function startNewGame() {
+            // 현재 단어 목록을 사용하여 새 게임 시작
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/change-wordlist', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            xhr.onload = function () {
+                if (xhr.status === 200) {
+                    alert('새 게임이 시작되었습니다.');
+                    newGameButton.click()    // 새 게임 버튼 클릭
+                } else {
+                    alert('서버 오류가 발생했습니다.');
+                }
+            };
+            xhr.send(JSON.stringify({ wordlist: currentWordlist }));
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            const inputField = document.getElementsByName("input_text")[0];
+
+            // 키패드 상태 초기화
+            const keypadStates = JSON.parse('{{ keypad_states|escapejs }}');
+            // 각 버튼에 초기 상태 적용
+            for (const [letter, state] of Object.entries(keypadStates)) {
+                const button = document.querySelector(`button[data-letter="${letter}"]`);
+                if (button) {
+                    button.classList.add(state);
+                }
+            }
+            // 각 키패드 버튼에 클릭 이벤트 추가
+            document.querySelectorAll(".keypad button").forEach(button => {
+                button.addEventListener("click", () => {
+                    const letter = button.getAttribute('data-letter');
+                    if (letter === "backspace") {
+                        backspace();      // 백스페이스 클릭 시 처리
+                    } else if (inputField.value.length < 5) {
+                        inputField.value += letter;      // 글자 추가
+                    }
+                });
+            });
+
+            // 백스페이스 버튼 클릭 시 처리
+            document.getElementById("backspace").addEventListener("click", () => {
+                inputField.value = inputField.value.slice(0, -1);
+                resetKeypadButtonStyle();
+            });
+            // 제출 버튼 클릭 시 폼 제출
+            document.getElementById("submit").addEventListener("click", () => {
+                document.forms[1].submit();
+            });
+        });
+        // 키패드 버튼 스타일 업데이트
+        function updateKeypadButtonStyle(letter) {
+            const keypadButton = document.getElementById(letter.toLowerCase());
+            if (keypadButton) {
+                keypadButton.style.backgroundColor = "#45A049";
+                keypadButton.style.color = "white";
+            }
+        }
+        // 키패드 버튼 스타일 초기화
+        function resetKeypadButtonStyle() {
+            document.querySelectorAll(".keypad button").forEach(button => {
+                button.style.backgroundColor = "";
+                button.style.color = "";
+            });
+        }
+
+
+
+
+    </script>
+    </div>
+</body>
+
+</html>
