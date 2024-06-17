@@ -36,5 +36,5 @@ spend
 group
 photo
 ruler
-peice
+piece
 scary
