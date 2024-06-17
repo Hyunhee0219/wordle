@@ -20,7 +20,6 @@
 4. 힌트를 이용하여 10번안에 정답 단어를 맞춘다.
 5. 이후 영어 사전 혹은 밀크T 사이트에 접속하여 추가적인 검색 및 학습을 진행한다.
 6. 새로운 게임을 반복하여 영단어를 학습한다.
-Wordle is a word puzzle game where players try to guess a five-letter word within six attempts. Start by guessing any five-letter word. After each guess, tiles change color: green for correct letters in the right spot, yellow for correct letters in the wrong spot, and gray for letters not in the word. Using these hints, adjust your guesses strategically. Aim to deduce the target word within your six tries.
 
 ## Team
 천재교육 빅데이터 8기 박지석
