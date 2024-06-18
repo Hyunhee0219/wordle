@@ -17,7 +17,7 @@
 1. anaconda 설치
 2. anaconda prompt 실행
 3. pip install django
-4. cd 파일 경로 (ex. C:\Users\user\Desktop\wordle_master\django_test\wordle_project)
+4. cd 파일 경로 (ex. C:\Users\user\Desktop\wordle-master\wordle-master)
 5. python manage.py runserver
 6. http://127.0.0.1:8000/ 링크 접속
 
