@@ -684,9 +684,12 @@
         }
         // 백스페이스 기능 함수
         function backspace() {
-            var input = document.getElementsByName("input_text")[0];
-            input.value = input.value.slice(0, -1);
-        }
+    var currentText = document.getElementById('inputField').value;
+    // 현재 텍스트에서 마지막 글자를 삭제
+    var newText = currentText.slice(0, -1);
+    // 입력 필드에 새로운 텍스트 반영
+    document.getElementById('inputField').value = newText;
+}
         // 모달 창 열고 닫는 함수
         function toggleModal() {
             var modal = document.getElementById("myModal");
