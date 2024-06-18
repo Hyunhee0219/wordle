@@ -77,7 +77,7 @@ def index(request):
         request.session['attempts'] += 1
         attempts = request.session['attempts']
         # 최대 시도 횟수 확인
-        if attempts >= 10:
+        if attempts > 10:
             SECRET_WORD = request.session['SECRET_WORD']
             response_text = f'게임 오버! <br>정답은 "{SECRET_WORD}"입니다.'
             return render(request, 'index.html', {'response_text': response_text, 'current_wordlist': current_wordlist})
