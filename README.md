@@ -17,10 +17,9 @@
 1. anaconda 설치
 2. anaconda prompt 실행
 3. pip install django
-4. pip install django-admin ( C++ error : https://visualstudio.microsoft.com/ko/visual-cpp-build-tools/ 에서 C++ runtime 설치)
-5. cd 파일 경로 (ex. C:\Users\user\Desktop\django_test\django_test\wordle_project)
-6. python manage.py runserver
-7. http://127.0.0.1:8000/ 링크 접속
+4. cd 파일 경로 (ex. C:\Users\user\Desktop\wordle_master\django_test\wordle_project)
+5. python manage.py runserver
+6. http://127.0.0.1:8000/ 링크 접속
 
 ## How to play Wordle
 1. Rule 버튼을 눌러 규칙을 확인한다.
