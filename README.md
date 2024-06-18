@@ -14,11 +14,12 @@
 이 게임은 수준별 영단어 어휘력 향상과 자기주도학습 능력을 키우는 데 도움이 됩니다.<br>
 
 ## How to start the game
-1. pip install django
-2. pip install django-admin ( C++ error : https://visualstudio.microsoft.com/ko/visual-cpp-build-tools/ 에서 C++ runtime 설치)
-3. cd 파일 경로 (ex. C:\Users\user\Desktop\django_test\django_test\wordle_project)
-4. python manage.py runserver
-5. http://127.0.0.1:8000/ 링크 접속
+1. anaconda prompt 설치 및 실행
+2. pip install django
+3. pip install django-admin ( C++ error : https://visualstudio.microsoft.com/ko/visual-cpp-build-tools/ 에서 C++ runtime 설치)
+4. cd 파일 경로 (ex. C:\Users\user\Desktop\django_test\django_test\wordle_project)
+5. python manage.py runserver
+6. http://127.0.0.1:8000/ 링크 접속
 
 ## How to play Wordle
 1. Rule 버튼을 눌러 규칙을 확인한다.
