@@ -13,6 +13,9 @@
 10 번의 시도 내에 단어를 맞추면 승리하고, 맞추지 못하면 패배하게 됩니다.<br>
 이 게임은 수준별 영단어 어휘력 향상과 자기주도학습 능력을 키우는 데 도움이 됩니다.<br>
 
+## Game link
+https://chunjae.pythonanywhere.com/
+
 ## How to start the game
 1. anaconda 설치
 2. anaconda prompt 실행
